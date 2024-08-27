@@ -116,7 +116,7 @@ card6.addEventListener("click", function(){
     addName.innerText = cardName6.innerText ;
     const floatTotalPrice = parseFloat(totalPrice.innerText).toFixed(2)
     totalPrice.innerText = parseFloat(cardMoney6) + parseFloat(floatTotalPrice) ;
-    m
+    
     makePurchase.removeAttribute("disabled")
     if(parseFloat(totalPrice.innerText) > 200){
         applyButton.removeAttribute("disabled")
