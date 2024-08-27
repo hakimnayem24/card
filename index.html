@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="relative">
     <header class="grid grid-cols-2 mx-auto my-auto bg-pink-50 px-14 py-6">
         <div class="text-center mx-auto my-auto space-y-8">
             <h2 class="text-center font-semibold text-2xl">---SALE FEVER---</h2>
@@ -24,7 +24,7 @@
     <section class="space-y-4">
         <h1 class="text-3xl font-bold mx-56 mt-14">Kitchenware</h1>
         <div class="flex gap-6 mx-56">
-            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card1">
                 <div class="bg-neutral-400 rounded py-4 px-3">
                     <img src="prod1.png" alt="" class="w-[62px] mx-6">
                 </div>
@@ -40,13 +40,13 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
-                      <h1>K.Accessories</h1>
-                      <p>39.00 Tk</p>
-                      <button class="btn btn-secondary" id="spoon">Buy</button>
+                      <h1 id="card-name1">K.Accessories</h1>
+                      <p id="card-money1">39.00 Tk</p>
+                      
                 </div>
                 
             </div>
-            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card2">
                 <div class="bg-neutral-400 rounded py-4 px-3">
                     <img src="prod2.png" alt="" class="w-20 mx-4">
                 </div>
@@ -62,12 +62,12 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
-                      <h1>K.Accessories</h1>
-                      <p>25.00 Tk</p>
-                      <button class="btn btn-secondary" id="board">Buy</button>
+                      <h1 id="card-name2">K.Accessories</h1>
+                      <p id="card-money2">25.00 Tk</p>
+                      
                 </div>
             </div>
-            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card3">
                 <div class="bg-neutral-400 rounded py-4 px-3">
                     <img src="prod3.png" alt="" class="w-[82px] mx-4">
                 </div>
@@ -83,16 +83,16 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
-                      <h1>Home Cooker</h1>
-                      <p>45.00 Tk</p>
-                      <button class="btn btn-secondary" id="pen">Buy</button>
+                      <h1 id="card-name3">Home Cooker</h1>
+                      <p id="card-money3">45.00 Tk</p>
+                      
                 </div>
             </div>
             <div class="bg-slate-200 inline-block h-28 p-3">
                 <p class="text-bold text-1xl p-1.5">Have Coupon?</p>
                 <div class="space-x-0 flex">
-                    <input type="text" name="" id="coupon" placeholder="Coupon code" class="p-2.5 border-2 border-stone-400 border-solid rounded-l-lg">
-                    <button class="bg-pink-500 p-[11px] rounded-r-lg text-white text-1xl" id="apply">Apply</button>
+                    <input type="text" name="" id="coupon-code" placeholder="Coupon code" class="p-2.5 border-2 border-stone-400 border-solid rounded-l-lg">
+                    <button class="btn btn-secondary p-[11px] rounded-r-lg text-white text-1xl" disabled id="apply-button">Apply</button>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
     <section class="space-y-4">
         <h1 class="text-3xl font-bold mx-56 mt-4">Sportswear</h1>
         <div class="flex gap-6 mx-56">
-            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+            <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card4">
                 <div class="bg-neutral-400 rounded py-4 px-3">
                     <img src="prod4.png" alt="" class="w-[77px] mx-6">
                 </div>
@@ -118,12 +118,12 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <h1>Sports Black Cap</h1>
-                  <p>49.00 Tk</p>
-                  <button class="btn btn-secondary" id="cap">Buy</button>
+                  <h1 id="card-name4">Sports Black Cap</h1>
+                  <p id="card-money4">49.00 Tk</p>
+                  
             </div>
         </div>
-        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card5">
             <div class="bg-neutral-400 rounded py-4 px-3">
                 <img src="prod5.png" alt="" class="w-[52px] mx-6">
             </div>
@@ -139,12 +139,12 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <h1>Full Jersey Set</h1>
-                  <p>69.00 Tk</p>
-                  <button class="btn btn-secondary" id="jersey">Buy</button>
+                  <h1 id="card-name5">Full Jersey Set</h1>
+                  <p id="card-money5">69.00 Tk</p>
+                  
             </div>
         </div>
-        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card6">
             <div class="bg-neutral-400 rounded py-4 px-3">
                 <img src="prod6.png" alt="" class="w-[62px] mx-6">
             </div>
@@ -160,9 +160,9 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <h1>Sports cates</h1>
-                  <p>159.00 Tk</p>
-                  <button class="btn btn-secondary" id="cates">Buy</button>
+                  <h1 id="card-name6">Sports cates</h1>
+                  <p id="card-money6">159.00 Tk</p>
+                 
             </div>
         </div>
         </div>
@@ -170,7 +170,7 @@
     <section class="space-y-4">
         <h1 class="text-3xl font-bold mx-56 mt-14">Furniture</h1>
         <div class="flex gap-6 mx-56">
-        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card7">
             <div class="bg-neutral-400 rounded py-4 px-3">
                 <img src="prod7.png" alt="" class="w-[62px] mx-6">
             </div>
@@ -186,12 +186,12 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <h1>Single Relax Chair</h1>
-                  <p>185.00 Tk</p>
-                  <button class="btn btn-secondary" id="normal-chair">Buy</button>
+                  <h1 id="card-name7">Single Relax Chair</h1>
+                  <p id="card-money7">185.00 Tk</p>
+                  
             </div>
         </div>
-        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+        <div class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card8">
             <div class="bg-neutral-400 rounded py-4 px-3">
                 <img src="prod8.png" alt="" class="w-[57px] mx-6">
             </div>
@@ -207,13 +207,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <h1>Children Play</h1>
-                  <p>299.00 Tk</p>
-                  <button class="btn btn-secondary" id="chair">Buy</button>
+                  <h1 id="card-name8">Children Play</h1>
+                  <p id="card-money8">299.00 Tk</p>
+                  
             </div>
         </div>
         <div>
-            <div  class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4">
+            <div  class="bg-slate-200 rounded w-40 text-center items-center p-3 space-y-4" id="card9">
                 <div class="bg-neutral-400 rounded py-4 px-3">
                 <img src="prod9.png" alt="" class="w-[81px] mx-6">
                 </div>
@@ -229,32 +229,43 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <h1>Flexible sofa</h1>
-                  <p>399.00 Tk</p>
-                  <button class="btn btn-secondary" id="sofa">Buy</button>
+                  <h1 id="card-name9">Flexible sofa</h1>
+                  <p id="card-money9">399.00 Tk</p>
+                 
             </div>
         </div>
         </div>
     </section>
-    <div class="bg-slate-200 inline-block p-4 space-y-4" >
-        <ol id="ol-list">
-            <li class="font-bold" id="heading-home cooker">Home Cooker</li>
-            <li class="font-bold" id="heading sports">Sports cates</li>
-            <li class="font-bold" id="heading cook">Home cooker</li>
-        </ol>
-        <div>
-            <p class="font-bold">Total price: <span class="font-light" id="price">257.00Tk</span></p>
-            <p class="font-bold">Discount: <span class="font-light" id="discount">51.40Tk</span></p>
-            <p class="font-bold">Total: <span class="font-light" id="total">205.60Tk</span></p>
+    <div class="p-12 bg-white inline-block rounded  border-4 border-solid  ml-[778px] absolute mt-[-700px]">
+        <span id="add-name" class="text-xl font-semibold"> 
+          
+          <p>Home Cooker</p>
+          <p>Home Cooker</p>
+
+
+
+        </span>
+        <hr class=" my-4">
+        <p class="text-xl"><span class="font-bold">Total price:</span > <span id="total-price">00.00</span>  TK </p>
+          <p class="text-xl" ><span class="font-bold">Discount :</span> <span id="discount-price">00.00</span> TK</p>
+          <p class="text-xl"><span class="font-bold ">Total:</span> <span id="intotal-price">00.00</span> TK</p>
+          <hr class="mt-5">
+    </div>
+    
+    <button class="btn btn-secondary absolute  ml-[850px] mb-[360px]  bottom-5 text-white" onclick="my_modal_5.showModal()" disabled id="make-purchase">Make Purchase</button>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <form method="dialog" class="modal-box text-center">
+        <figure class="flex justify-center">
+          <img src="/congo.png" alt="" srcset="">
+        </figure>
+        <h3 class="font-bold text-3xl">Congratulations</h3>
+        <p class="py-2">Your Purchase the product</p>
+        <div class="modal-action flex justify-center mt-0">
+     
+          <button class="btn btn-secondary text-white mt-5 " id="go-home">Go Home</button>
         </div>
-        <button class="btn btn-secondary " id="mainclick">Make Purchase</button>
-    </div>
-    <div class="bg-zinc-400 rounded w-[500px] p-4 space-y-4" id="Congratulations">
-        <img src="congo.png" alt="" class="mx-[150px]">
-        <h1 class="text-center font-bold items-center text-4xl">Congratulations</h1>
-        <p class="text-center">You Purchase the product </p>
-        <button class="btn btn-secondary mx-[180px]">Go Home</button>
-    </div>
+      </form>
+    </dialog>
     <script src="index.js"></script>
 </body>
 </html>
